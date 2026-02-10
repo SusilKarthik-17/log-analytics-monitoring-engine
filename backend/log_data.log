@@ -1,0 +1,26 @@
+2026-02-04 18:20:01 INFO  Server          Application started successfully
+2026-02-04 18:20:05 INFO  AuthService     User 101 logged in
+2026-02-04 18:20:08 INFO  RequestHandler  GET /api/profile 200 OK
+2026-02-04 18:20:12 WARNING CacheManager  Cache miss for key user_101
+2026-02-04 18:20:15 INFO  Database        Connection established
+2026-02-04 18:20:18 INFO  OrderService    Order 5001 created
+2026-02-04 18:20:22 INFO  PaymentService  Payment initiated for order 5001
+2026-02-04 18:20:25 ERROR PaymentService  Payment failed due to timeout
+2026-02-04 18:20:28 WARNING RetryManager  Retrying payment for order 5001
+2026-02-04 18:20:32 INFO  PaymentService  Payment successful for order 5001
+2026-02-04 18:20:35 INFO  OrderService    Order 5001 completed
+2026-02-04 18:20:40 INFO  AuthService     User 102 logged in
+2026-02-04 18:20:43 INFO  RequestHandler  POST /api/order 201 CREATED
+2026-02-04 18:20:47 ERROR Database        Failed to execute query
+2026-02-04 18:20:50 WARNING Database     Slow query detected
+2026-02-04 18:20:54 INFO  Database        Query executed successfully
+2026-02-04 18:20:58 INFO  Inventory       Stock updated for product 301
+2026-02-04 18:21:02 INFO  RequestHandler  GET /api/orders 200 OK
+2026-02-04 18:21:06 WARNING MemoryMonitor Memory usage at 78%
+2026-02-04 18:21:10 WARNING MemoryMonitor Memory usage at 85%
+2026-02-04 18:21:15 ERROR MemoryMonitor  Memory usage critical at 92%
+2026-02-04 18:21:20 INFO  AutoScaler      Scaling up resources
+2026-02-04 18:21:25 INFO  Server          System stabilized
+2026-02-04 18:21:30 INFO  AuthService     User 101 logged out
+2026-02-04 18:21:35 INFO  Server          Health check passed
+
