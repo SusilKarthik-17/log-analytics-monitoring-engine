@@ -5,6 +5,9 @@ def main():
     client = create_dask_client()
     print(client)
     print(f"Dashboard: {client.dashboard_link}")
+
+    input("Press Enter to close...")
+
     # Now you can use the client to submit tasks to the Dask cluster
     # For example, you can use client.submit() to run a function on the cluster
     # result = client.submit(your_function, your_arguments)
