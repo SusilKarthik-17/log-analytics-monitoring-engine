@@ -26,3 +26,26 @@ with parsing:
 -> we can detect the unusual patterns
 -> used to convert raw log data to a machine readable language.
 ''' 
+
+import re
+
+LOG_PATTERN = re.compile(
+    r"(?P<timestamp>[\d\-:\s]+)\s"
+    r"(?P<level>\w+)\s"
+    r"(?P<service>\w+)\s"
+    r"(?P<message>.*?)(?:\suser_id=(?P<user_id>\d+))?$"
+)
+
+
+# Groupdict()
+# Strip()
+# re.compile() - it is a method which is used to create regex patterns. 
+
+# python regex: python regular expressions are used for searching, matching, and extracting the data pattern from the given text.  
+# 
+'''
+ r --> raw data
+ ? --> starting of the pattern, from this the line is started
+ P<timestamp>, P<level>, P<services>, P<message> --> for the capturing names of particular data
+ \s --> to remove the white spaces between the name or text we've given
+''' 
